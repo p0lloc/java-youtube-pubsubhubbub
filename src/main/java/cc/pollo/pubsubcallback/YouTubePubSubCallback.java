@@ -117,8 +117,6 @@ public class YouTubePubSubCallback {
         if(text.isEmpty() || documentBuilder == null)
             return null;
 
-        System.out.println(text);
-
         ByteArrayInputStream input = new ByteArrayInputStream(text.getBytes(StandardCharsets.UTF_8));
         VideoFeed feed = null;
         try {
